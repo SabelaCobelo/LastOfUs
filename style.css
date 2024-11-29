@@ -1,0 +1,274 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+/* Estilo general del header */
+#hero {
+    position: relative;
+    background: url('./fondo_apocaliptico.jpg') no-repeat center center/cover; /* Cambia esta URL por la imagen que prefieras */
+    height: 100vh; /* Fondo cubriendo toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fcd8c3;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Overlay oscuro para mejorar la legibilidad del texto */
+#hero .overlay {
+    background: rgba(103, 70, 41, 0.5); /* Sombra oscura */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    z-index: 2;
+}
+
+/* Título principal */
+#hero h1 {
+    font-family: 'Impact', sans-serif; /* Fuente audaz */
+    font-size: 4em;
+    margin: 0;
+    color: #a1b24b; /* Verde oliva */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); /* Sombra para hacer el texto más visible */
+}
+
+/* Subtítulo */
+#hero p {
+    font-size: 1.5em;
+    color: #e0e0e0;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botón de acción */
+#hero .btn {
+    font-size: 1.2em;
+    background-color: #a1b24b;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+h1, h2 {
+    font-size: 3em;
+
+    color: #b59b85;
+    padding: 2em;
+}
+
+/* Carrusel */
+#carrusel {
+    text-align: center;
+    padding: 40px;
+}
+
+#carrusel h2 {
+    color: #b59b85;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.carrusel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.carrusel img {
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.carrusel img:hover {
+    transform: scale(1.05);
+}
+
+/* Sinopsis */
+#sinopsis {
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.8);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#sinopsis h2 {
+    color: #b59b85;
+}
+
+/* Video Trailers */
+#trailers {
+    padding: 20px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Información del juego */
+#info-juego {
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.8);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#info-juego ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#info-juego li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Tabla de personajes */
+#personajes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#personajes th, #personajes td {
+    padding: 10px;
+    text-align: left;
+}
+
+#personajes th {
+    background-color: #4b4b4b;
+    color: #fff;
+}
+
+#personajes td {
+    background-color: #333;
+}
+
+#personajes img {
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+}
+
+/* Formulario */
+/* Estilo general del formulario */
+#contactForm {
+    background-color: #2b2b2b; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Título del formulario */
+#contactForm h2 {
+    text-align: center;
+    color: #a1b24b; /* Verde oliva similar al de la temática */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo del legend */
+fieldset legend {
+    font-size: 1.4em;
+    color: #b59b85; /* Un color cálido y amigable */
+    margin-bottom: 15px;
+}
+
+/* Estilo de las etiquetas y campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #444; /* Fondo oscuro de los campos */
+    color: #e0e0e0; /* Texto claro */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Efecto cuando el usuario pasa el ratón o hace foco */
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #a1b24b; /* Verde brillante en el foco */
+    background-color: #333; /* Fondo más oscuro cuando está enfocado */
+    outline: none;
+}
+
+/* Estilo del botón de envío */
+.input-group input[type="submit"] {
+    background-color: #a1b24b;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en el botón de envío */
+.input-group input[type="submit"]:hover {
+    background-color: #869e3f; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilo del área de texto */
+textarea {
+    resize: vertical; /* Permite que el usuario cambie el tamaño del área de texto verticalmente */
+    border: 1px solid #555;
+}
+
+/* Estilo de error si el campo no es válido */
+input:invalid, textarea:invalid {
+    border-color: #f44336; /* Rojo si el campo es inválido */
+}
+
+input:valid, textarea:valid {
+    border-color: #4CAF50; /* Verde si el campo es válido */
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 10px;
+    color: #b59b85;
+}
